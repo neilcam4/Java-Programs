@@ -6,8 +6,6 @@ public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
 
-
-
     public static void main(String[] args) {
 
         int[] myNumbers = getNumbers(5);
@@ -17,12 +15,8 @@ public class Main {
         }
         double myMean = myAnswer(0);
         int myScore=0;
-
         checkAnswer(myMean, myNumbers, myScore);
-
-    }
-
-
+        }
 
     private static double checkAnswer(double myMean, int[] myNumbers, int myScore){
 
@@ -34,8 +28,7 @@ public class Main {
         }
         System.out.println("The mean is " + getAverage(myNumbers));
         return getAverage(myNumbers);
-
-    }
+        }
 
     private static int[] getNumbers(int number) {
         System.out.println("Enter in " + number + " new numbers");
@@ -50,9 +43,6 @@ public class Main {
         answer = scanner.nextDouble();
         return answer;
     }
-
-
-
     private static double getAverage(int []array){
         int sum = 0;
         for(int i = 0;i<array.length;i++){
@@ -60,7 +50,6 @@ public class Main {
 
         }
         return (double)sum / (double)array.length;
-    }
-
+        }
     }
 
